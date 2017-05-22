@@ -49,4 +49,10 @@ public class MovieTest {
         assertEquals(9, movie.getRanking());
     }
 
+    @Test
+    public void canOverrideString() {
+        Movie movie = new Movie("Kungfu Pandas", "Cheese", 10);
+        assertEquals("Title: Kungfu Pandas, Genre: Cheese, Ranking: 10", movie.toString());
+    }
+
 }

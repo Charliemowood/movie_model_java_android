@@ -46,4 +46,9 @@ public class Movie {
     public void setRanking(int ranking) {
         this.ranking = ranking;
     }
+
+    @Override
+    public String toString() {
+        return "Title: " + title + ", Genre: " + genre + ", Ranking: " + ranking;
+    }
 }
