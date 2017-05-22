@@ -5,14 +5,37 @@ package com.codeclan.example.javaplay;
  */
 
 public class Movie {
-    String title;
+    private String title;
+    private String genre;
+    private int ranking;
+
+
+    public Movie(String title, String genre, int ranking) {
+        this.title = title;
+        this.genre = genre;
+        this.ranking = ranking;
+    }
 
     public Movie(String title) {
         this.title = title;
     }
 
 
+
+
     public String getTitle() {
         return this.title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getGenre() {
+        return this.genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 }
