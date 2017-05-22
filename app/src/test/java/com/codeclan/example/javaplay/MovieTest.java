@@ -42,4 +42,11 @@ public class MovieTest {
         assertEquals(10, movie.getRanking());
     }
 
+    @Test
+    public void canSetRanking() {
+        Movie movie = new Movie("Kungfu Pandas", "Cheese", 10);
+        movie.setRanking(9);
+        assertEquals(9, movie.getRanking());
+    }
+
 }
